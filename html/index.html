@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tudo sobre Google Glass</title>
+    
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40pt;
+            color: blue;
+            font-style: italic;
+            text-shadow: 2px 2px 4px #889fb5;
+        }
+        h2 {
+            color: green;
+        }
+       
+    </style>
+</head>
+<body>
+    <center>
+        <div id="interface"> 
+            <header> 
+                <h1>Quem sou eu?</h1>
+                <h2>Meu caminho até a tecnologia</h2>
+            </header>
+            <p>Meu nome é Jailton Santos, tenho 23 anos e sou estudante de Análise e Desenvolvimento de Sistemas. Desde pequeno, sempre tive uma paixão por tecnologia e inovação.</p>
+        </div>
+
+        <img src="../img/perfil.jpg" alt="Jailton Santos" width="215" height="210">
+    </center>
+
+    <h3 class="sub-titulo-skills" onclick="toggleMenu('lista1')">Hard Skills:</h3>
+    <ul id="lista1" style="display: none;">
+        <li>Programação Orientada a Objetos</li>
+        <li>Front-End básico (HTML, CSS)</li>
+        <li>Back-End (Python3, Java2, BD)</li>
+        <li>Controle de Versão (Git)</li>
+        <li>Lógica de Programação</li>
+    </ul>
+
+    <h3 class="sub-titulo-skills" onclick="toggleMenu('lista2')">Linguagens:</h3>
+    <ul id="lista2" style="display: none;">
+        <li>Java Spring Boot</li>
+        <li>Python</li>
+        <li>Banco de Dados (MySQL)</li>
+    </ul> 
+    <script>
+        function toggleMenu(id) {
+            var menu = document.getElementById(id);
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
