@@ -1,0 +1,65 @@
+body {
+    background-image: url('https://i.pinimg.com/736x/12/11/32/1211329789c0fdcafbfa1e26b899ef50.jpg');
+    background-size: cover;      
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+
+#interface p {
+    color: white;         
+    font-size: 1.2rem;      
+    line-height: 1.6;       
+    background-color: rgba(162, 197, 227, 0.5); 
+    padding: 10px;          
+    border-radius: 8px;     
+}
+
+
+ul {
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
+
+
+.lista-skills {
+    color: white; 
+}
+
+.lista-contato {
+    color: rgb(137, 145, 196);
+    font-family: 'dejaVu sans mono', monospace;
+    line-height: 1.8;
+}
+
+li {
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #b53881;           
+    transform: translateX(7px); 
+}
+
+
+.sub-titulo-skills {
+    margin: 20px auto;
+    cursor: pointer; 
+    user-select: none;
+    color: #7c1bc6;
+    font-family: 'Times New Roman', serif;
+    margin-top: 15px;
+    transform: translateX(20px);
+    transition: transform 0.3s;
+}
+
+.sub-titulo-skills:hover {
+    color: #fb0ddf;
+    text-shadow: 0 0 55px #b53881, 
+                 0 0 5px #b53881, 
+                 0 0 20px #b53881;
+    transform: scale(0.85); 
+}
+
